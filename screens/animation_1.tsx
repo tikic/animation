@@ -1,6 +1,6 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import React, {useEffect} from 'react'
-import Animated, {useSharedValue, useAnimatedStyle, withTiming, withSpring, withRepeat} from 'react-native-reanimated';
+import Animated, {useSharedValue, useAnimatedStyle, withSpring, withRepeat} from 'react-native-reanimated';
 
 const SIZE = 100.0;
 
@@ -10,7 +10,7 @@ const handleRotate = (progress:Animated.SharedValue<number>) => {
   return `${progress.value * 2 * Math.PI}rad`;
 }
 
-const animation_1 = () => {
+const Animation_1 = () => {
   const progress = useSharedValue(1);
   const scale = useSharedValue(2)
 
@@ -40,7 +40,7 @@ const animation_1 = () => {
   )
 }
 
-export default animation_1
+export default Animation_1
 
 const styles = StyleSheet.create({
 

@@ -1,6 +1,6 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React, {useEffect} from 'react'
-import Animated, {useSharedValue, useAnimatedStyle, withTiming, withSpring, withRepeat, useAnimatedGestureHandler} from 'react-native-reanimated';
+import { StyleSheet, View } from 'react-native'
+import React from 'react'
+import Animated, {useSharedValue, useAnimatedStyle, withSpring, useAnimatedGestureHandler} from 'react-native-reanimated';
 import {PanGestureHandler, PanGestureHandlerGestureEvent} from 'react-native-gesture-handler';
 
 const SIZE = 90;
@@ -11,7 +11,7 @@ type ContextType = {
   translateY: number;
 };
 
-const animation_2 = () => {
+const Animation_2 = () => {
   const translateX = useSharedValue(0);
   const translateY = useSharedValue(0);
 
@@ -56,7 +56,7 @@ const animation_2 = () => {
   )
 }
 
-export default animation_2
+export default Animation_2
 
 const styles = StyleSheet.create({
   container: {

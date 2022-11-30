@@ -1,18 +1,22 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import {createStackNavigator} from '@react-navigation/stack'
-import animation_1 from '../screens/animation_1';
+import Animation_1 from '../screens/Animation_1';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import Home from '../screens/Home';
-import animation_2 from '../screens/animation_2';
+import Animation_2 from '../screens/Animation_2';
+import Animation_3 from '../screens/Animation_3';
 
 
 const Drawer = createDrawerNavigator();
 
 const DrawerNavigator = () => (
-    <Drawer.Navigator initialRouteName='Animation 2'>
-        <Drawer.Screen name='Animation 1' component={animation_1} />
-        <Drawer.Screen name='Animation 2' component={animation_2} />
+    <Drawer.Navigator initialRouteName='Animation 3' screenOptions={{
+        headerShown: false
+      }}>
+        <Drawer.Screen name='Animation 1' component={Animation_1} />
+        <Drawer.Screen name='Animation 2' component={Animation_2} />
+        <Drawer.Screen name='Animation 3' component={Animation_3} />
     </Drawer.Navigator>
 
 );
