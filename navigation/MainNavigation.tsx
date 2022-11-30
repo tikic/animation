@@ -6,17 +6,19 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import Home from '../screens/Home';
 import Animation_2 from '../screens/Animation_2';
 import Animation_3 from '../screens/Animation_3';
+import Animation_4 from '../screens/Animation_4';
 
 
 const Drawer = createDrawerNavigator();
 
 const DrawerNavigator = () => (
-    <Drawer.Navigator initialRouteName='Animation 3' screenOptions={{
+    <Drawer.Navigator initialRouteName='Animation 4' screenOptions={{
         headerShown: false
       }}>
         <Drawer.Screen name='Animation 1' component={Animation_1} />
         <Drawer.Screen name='Animation 2' component={Animation_2} />
         <Drawer.Screen name='Animation 3' component={Animation_3} />
+        <Drawer.Screen name='Animation 4' component={Animation_4} />
     </Drawer.Navigator>
 
 );
