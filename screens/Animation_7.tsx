@@ -1,7 +1,7 @@
-import { StyleSheet, View, Text, Image, Dimensions } from 'react-native'
-import React, {useRef, useCallback} from 'react'
+import { StyleSheet, View, Text, Dimensions } from 'react-native'
+import React from 'react'
 import { PanGestureHandler, PanGestureHandlerGestureEvent } from 'react-native-gesture-handler'
-import Animated, { useAnimatedStyle, useAnimatedGestureHandler, useSharedValue, useDerivedValue, cancelAnimation, withTiming, withDecay } from 'react-native-reanimated';
+import Animated, { useAnimatedStyle, useAnimatedGestureHandler, useSharedValue, useDerivedValue, cancelAnimation, withDecay } from 'react-native-reanimated';
 
 const titles = ["What's", 'up', 'mobile', 'devs?'];
 const {width : PAGE_WIDTH} = Dimensions.get('window')
