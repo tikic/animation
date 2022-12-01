@@ -10,12 +10,13 @@ import Animation_3 from '../screens/Animation_3';
 import Animation_4 from '../screens/Animation_4';
 import Animation_5 from '../screens/Animation_5';
 import Animation_6 from '../screens/Animation_6';
+import Animation_7 from '../screens/Animation_7';
 
 
 const Drawer = createDrawerNavigator();
 
 const DrawerNavigator = () => (
-    <Drawer.Navigator initialRouteName='Animation 6' screenOptions={{
+    <Drawer.Navigator initialRouteName='Animation 7' screenOptions={{
         headerShown: false
       }}>
         <Drawer.Screen name='Animation 1' component={Animation_1} />
@@ -24,6 +25,7 @@ const DrawerNavigator = () => (
         <Drawer.Screen name='Animation 4' component={Animation_4} />
         <Drawer.Screen name='Animation 5' component={Animation_5} />
         <Drawer.Screen name='Animation 6' component={Animation_6} />
+        <Drawer.Screen name='Animation 7' component={Animation_7} />
     </Drawer.Navigator>
 
 );
